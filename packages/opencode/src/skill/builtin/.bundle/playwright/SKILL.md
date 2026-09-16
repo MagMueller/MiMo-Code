@@ -1,10 +1,12 @@
 ---
 name: "playwright"
-description: "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script."
+description: "Use when the user explicitly requests Playwright CLI or names this skill. For general browser interaction, use the browser-use skill by default."
 ---
 
 
 # Playwright CLI Skill
+
+Use this skill when the user explicitly requests Playwright CLI. For general browser interaction, load the `browser-use` skill instead.
 
 Drive a real browser from the terminal using `playwright-cli`. Prefer the bundled wrapper script so the CLI works even when it is not globally installed.
 Treat this skill as CLI-first automation. Do not pivot to `@playwright/test` unless the user explicitly asks for test files.
