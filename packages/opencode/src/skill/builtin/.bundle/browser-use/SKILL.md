@@ -35,7 +35,7 @@ Check `command -v browser-use` first. If the CLI is missing, install it with:
 uv tool install --python 3.12 --upgrade browser-use
 ```
 
-Then run `browser-use --doctor`. If `uv` is missing or connection fails, follow the upstream installation guide linked above. MiMoCode already bundles this skill, so `browser-use skill install` is unnecessary. Do not switch browser backends silently when setup fails; report the blocker.
+Then run `browser-use --doctor`. If `uv` is missing, install it from https://docs.astral.sh/uv/getting-started/installation/ and retry. If Chrome connection fails, use the upstream guide linked above for connection diagnostics only; translate any `browser-harness` command to `browser-use`. Do not install, register, remove, or switch skills as part of recovery. MiMoCode already bundles this skill, so `browser-use skill install` is unnecessary. Do not switch browser backends silently when setup fails; report the blocker.
 
 ## When Not to Use
 
